@@ -112,7 +112,7 @@ public:
         name = RegistryHelper::ReadStringRegistry();
         return name.c_str();
     }
-    const EXPCMDSTATE State(_In_opt_ IShellItemArray* selection) override { return ECS_DISABLED; }
+    const EXPCMDSTATE State(_In_opt_ IShellItemArray* selection) override { return ECS_ENABLED; }
 
 private:
     std::wstring name;

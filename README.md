@@ -10,3 +10,19 @@ The API has some limitations, such as forcing all right elements of a single pro
 This app will allow the user to add customized elements to the right click menu. The user will be able to customize the element count, along with elements' titles, icons and effects. I don't yet know exactly what can be accessed through the api but a simple console command should be possible, enabling the user to do almost anything.
 
 Editing or removing existing elements is out of scope and possibly impossible.
+
+# Complete Features
+- 1 hard coded menu element
+
+# TODO
+- Implement element editing UI
+	- Enable condition
+	- Name
+	- Icon
+	- Action
+	- Sub element list
+- Implement menu COM object
+	- Enable flag
+	- Icon
+	- Action
+	- Sub element list
