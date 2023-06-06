@@ -8,6 +8,7 @@
 #include <string>
 #include <vector>
 #include <sstream>
+#include "../RegistryHelper/RegistryHelper.cpp"
 
 #pragma comment(lib, "runtimeobject.lib")
 
@@ -108,30 +109,7 @@ class __declspec(uuid("b6046922-c69e-45c7-bab9-e9f760052b5d")) MenuElementHandle
 public:
     const wchar_t* Title() override
     {
-        return L"testelem";
-
-        //Open registry key
-        HKEY hKey;
-        LONG lRes = RegOpenKeyEx(HKEY_ROOT, HKEY_DIR, 0, KEY_READ, &hKey);
-        bool bExistsAndSuccess(lRes == ERROR_SUCCESS);
-        bool bDoesNotExistsSpecifically(lRes == ERROR_FILE_NOT_FOUND);
-
-        //if (!bExistsAndSuccess) return L"failure";
-        if (bDoesNotExistsSpecifically) return L"file not found";
-        //if (!bExistsAndSuccess) return std::to_wstring(lRes);
-
-        //Read value from key
-        name = DefaultString;
-
-        WCHAR szBuffer[512];
-        DWORD dwBufferSize = sizeof(szBuffer);
-        ULONG nError;
-        nError = RegQueryValueEx(hKey, NameKey, 0, NULL, (LPBYTE)szBuffer, &dwBufferSize);
-        if (ERROR_SUCCESS == nError)
-        {
-            name = szBuffer;
-        }
-
+        name = RegistryHelper::ReadStringRegistry();
         return name.c_str();
     }
     const EXPCMDSTATE State(_In_opt_ IShellItemArray* selection) override { return ECS_DISABLED; }

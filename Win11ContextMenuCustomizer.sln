@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ContextMenuEditor", "Contex
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ContextMenu", "ContextMenu\ContextMenu.vcxproj", "{1D389BC9-F6EF-4FD1-BABA-94906D95C642}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RegistryHelper", "RegistryHelper\RegistryHelper.vcxproj", "{AA0CED52-0B38-4B9B-B0F6-A44B6417B6A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM64 = Debug|ARM64
@@ -61,6 +63,18 @@ Global
 		{1D389BC9-F6EF-4FD1-BABA-94906D95C642}.Release|x64.Build.0 = Release|x64
 		{1D389BC9-F6EF-4FD1-BABA-94906D95C642}.Release|x86.ActiveCfg = Release|Win32
 		{1D389BC9-F6EF-4FD1-BABA-94906D95C642}.Release|x86.Build.0 = Release|Win32
+		{AA0CED52-0B38-4B9B-B0F6-A44B6417B6A0}.Debug|ARM64.ActiveCfg = Debug|x64
+		{AA0CED52-0B38-4B9B-B0F6-A44B6417B6A0}.Debug|ARM64.Build.0 = Debug|x64
+		{AA0CED52-0B38-4B9B-B0F6-A44B6417B6A0}.Debug|x64.ActiveCfg = Debug|x64
+		{AA0CED52-0B38-4B9B-B0F6-A44B6417B6A0}.Debug|x64.Build.0 = Debug|x64
+		{AA0CED52-0B38-4B9B-B0F6-A44B6417B6A0}.Debug|x86.ActiveCfg = Debug|Win32
+		{AA0CED52-0B38-4B9B-B0F6-A44B6417B6A0}.Debug|x86.Build.0 = Debug|Win32
+		{AA0CED52-0B38-4B9B-B0F6-A44B6417B6A0}.Release|ARM64.ActiveCfg = Release|x64
+		{AA0CED52-0B38-4B9B-B0F6-A44B6417B6A0}.Release|ARM64.Build.0 = Release|x64
+		{AA0CED52-0B38-4B9B-B0F6-A44B6417B6A0}.Release|x64.ActiveCfg = Release|x64
+		{AA0CED52-0B38-4B9B-B0F6-A44B6417B6A0}.Release|x64.Build.0 = Release|x64
+		{AA0CED52-0B38-4B9B-B0F6-A44B6417B6A0}.Release|x86.ActiveCfg = Release|Win32
+		{AA0CED52-0B38-4B9B-B0F6-A44B6417B6A0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
